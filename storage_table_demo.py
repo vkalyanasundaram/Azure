@@ -3,7 +3,8 @@ from azure.storage.table import TableService, Entity
 
 # Define variables to handle Azure authentication
 auth_token = azurerm.get_access_token_from_cli()
-subscription_id = azurerm.get_subscription_from_cli()
+#subscription_id = azurerm.get_subscription_from_cli()
+subscription_id = '4d05309c-0709-4c19-8ea1-bf8eef09ef16'
 
 # Define variables with random resource group and storage account names
 resourcegroup_name = 'vks'+''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(6))
