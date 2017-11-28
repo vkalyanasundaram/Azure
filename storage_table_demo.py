@@ -81,7 +81,7 @@ print('Created entry for Tesla...')
 cars = Entity()
 pizza.PartitionKey = 'carsmenu'
 cars.RowKey = '002'
-cars.make. = 'Honda'
+cars.make = 'Honda'
 cars.model = 'Civic'
 cars.year = 2014
 cars.color = 'Blue'
