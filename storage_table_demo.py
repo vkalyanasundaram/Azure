@@ -138,7 +138,7 @@ items = table_service.query_entities('itemstable', filter="PartitionKey eq 'cars
 for item in items:
     print('Name: ' + item.make)
     print('Model: ' + item.model)
-    print('Year: ' + str(item.year)
+    print('Year: ' + str(item.year))
     print('Color ' + item.color)
     print('Price: ' + str(item.price) + '\n')
 
