@@ -10,6 +10,11 @@ resourcegroup_name = 'wk6'+''.join(random.choice(string.ascii_lowercase + string
 storageaccount_name = 'wk6'+''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(6))
 location = 'westus'
 
+print ('Auth Token : ' + auth_token)
+print ('Subscription ID : ' + subscription_id)
+print ('RG Name : ' + resourcegroup_name)
+print ('SA Name : ' + storageaccount_name)
+
 ###
 # Create the a resource group for our demo
 # We need a resource group and a storage account. A random name is generated, as each storage account name must be globally unique.
@@ -19,6 +24,7 @@ if response.status_code == 200 or response.status_code == 201:
     print('Resource group: ' + resourcegroup_name + ' created successfully.')
 else:
     print('Error creating resource group')
+    print ('Error Code : ' + str(response.status_code))
 
 # Create a storage account for our demo
 response = azurerm.create_storage_account(auth_token, subscription_id, resourcegroup_name, storageaccount_name,  location, storage_type='Standard_LRS')
