@@ -6,8 +6,8 @@ auth_token = azurerm.get_access_token_from_cli()
 subscription_id = azurerm.get_subscription_from_cli()
 
 # Define variables with random resource group and storage account names
-resourcegroup_name = 'wk6'+''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(6))
-storageaccount_name = 'wk6'+''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(6))
+resourcegroup_name = 'vks'+''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(6))
+storageaccount_name = 'vks'+''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(6))
 location = 'westus'
 
 print ('Auth Token : ' + auth_token)
