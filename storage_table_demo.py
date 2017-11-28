@@ -86,7 +86,7 @@ table_service.insert_entity('itemstable', cars)
 print('Created entry for Tesla...')
 
 cars = Entity()
-pizza.PartitionKey = 'carsmenu'
+cars.PartitionKey = 'carsmenu'
 cars.RowKey = '002'
 cars.make = 'Honda'
 cars.model = 'Civic'
